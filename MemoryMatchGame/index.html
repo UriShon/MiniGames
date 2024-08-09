@@ -7,6 +7,7 @@
 <body>
   <div class="container">
     <h1>Memory Matching Game</h1>
+    <div id="timer" class="hidden-timer">⏰ 0</div> <!-- 타이머 위치를 오른쪽 끝으로 이동 -->
     <div id="difficulty-buttons">
       <button class="difficulty-button" onclick="setDifficulty('easy')">Easy</button>
       <button class="difficulty-button" onclick="setDifficulty('normal')">Normal</button>
@@ -15,7 +16,6 @@
     </div>
     <div class="header" style="display: none;">
       <button id="start-button" onclick="startGame()">START</button>
-      <div id="timer" style="display: none;">⏰ 0</div> <!-- 타이머가 여기서 오른쪽 끝에 위치 -->
     </div>
   </div>
   <div class="game-board" id="game-board" style="display: none;"></div>
