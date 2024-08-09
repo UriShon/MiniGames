@@ -33,17 +33,11 @@ h1 {
   position: relative;
 }
 
-#start-button {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%); /* 중앙에 정렬 */
-}
-
 #timer {
   font-size: 18px;
   font-weight: bold;
-  position: absolute; /* header 내에서 위치를 조정 */
-  right: 0; /* header의 오른쪽 끝에 위치 */
+  align-self: flex-end; /* 타이머를 오른쪽 끝에 위치 */
+  margin-top: -10px; /* 상단 여백 제거 */
   display: none; /* 기본적으로 숨김 */
 }
 
