@@ -105,7 +105,7 @@ function setDifficulty(level) {
 // 게임 시작 시 동작
 function startGame() {
   startButton.style.display = 'none';
-  document.getElementById('timer').classList.remove('hidden-timer'); // 타이머를 보이게 함
+  document.getElementById('timer').style.display = 'block'; // 타이머를 보이게 함
   pauseReplayButtons.style.display = 'block';
   showAllCards();
 }
