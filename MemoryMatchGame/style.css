@@ -36,7 +36,7 @@ h1 {
 #timer {
   font-size: 18px;
   font-weight: bold;
-  position: absolute; /* 절대 위치로 우측 끝에 배치 */
+  position: relative; /* 절대 위치로 우측 끝에 배치 */
   right: 0; /* 우측에 배치 */
   display: none; /* 기본적으로 숨김 */
 }
