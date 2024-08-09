@@ -33,7 +33,11 @@ h1 {
   position: relative;
 }
 
-
+#start-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* 중앙에 정렬 */
+}
 
 #timer {
   font-size: 18px;
