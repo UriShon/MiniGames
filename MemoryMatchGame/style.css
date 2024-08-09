@@ -40,11 +40,6 @@ h1 {
   display: none; /* 기본적으로 숨김 */
 }
 
-
-.hidden-timer {
-  display: none; /* 메인 화면에서는 타이머 숨김 */
-}
-
 #difficulty-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
