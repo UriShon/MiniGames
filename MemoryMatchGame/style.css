@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative; /* 부모 컨테이너에 상대적으로 배치 */
 }
 
 h1 {
@@ -24,19 +25,19 @@ h1 {
 
 .header {
   display: flex;
-  justify-content: center; /* START 버튼을 중앙에 정렬 */
+  justify-content: center; /* START 버튼을 중앙에 배치 */
   align-items: center;
   width: 100%;
   max-width: 800px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 #timer {
   font-size: 18px;
   font-weight: bold;
-  position: absolute;
-  top: 20px;
-  right: 20px; /* 타이머를 오른쪽 끝에 위치시키기 */
+  position: absolute; /* 절대 위치로 우측 끝에 배치 */
+  right: 0; /* 우측에 배치 */
   display: none; /* 기본적으로 숨김 */
 }
 
