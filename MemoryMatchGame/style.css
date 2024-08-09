@@ -18,13 +18,13 @@ body {
 }
 
 h1 {
-  margin-bottom: 20px; /* 게임 타이틀과 난이도 버튼 사이의 여백 추가 */
+  margin-bottom: 50px; /* 타이틀과 난이도 버튼 사이에 여백 추가 */
   text-align: center;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* START 버튼을 중앙에 정렬 */
   align-items: center;
   width: 100%;
   max-width: 800px;
@@ -34,13 +34,19 @@ h1 {
 #timer {
   font-size: 18px;
   font-weight: bold;
-  margin-right: 20px; /* 오른쪽 끝에 위치하도록 설정 */
+  position: absolute;
+  top: 20px; 
+  right: 20px; /* 타이머를 오른쪽 끝에 위치시키기 */
+}
+
+.hidden-timer {
+  display: none; /* 메인 화면에서는 타이머 숨김 */
 }
 
 #difficulty-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px; /* 버튼들 사이의 간격 추가 */
+  gap: 20px; /* 버튼들 사이의 간격 추가 */
   margin-bottom: 20px;
 }
 
