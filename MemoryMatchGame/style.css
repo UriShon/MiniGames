@@ -35,9 +35,11 @@ h1 {
   font-size: 18px;
   font-weight: bold;
   position: absolute;
-  top: 20px; 
+  top: 20px;
   right: 20px; /* 타이머를 오른쪽 끝에 위치시키기 */
+  display: none; /* 기본적으로 숨김 */
 }
+
 
 .hidden-timer {
   display: none; /* 메인 화면에서는 타이머 숨김 */
