@@ -96,11 +96,20 @@ function setDifficulty(level) {
       gameBoard.style.gridTemplateColumns = 'repeat(8, 100px)';
       break;
   }
-  difficultyButtons.style.display = 'none';
+
+  // 난이도 버튼 숨기기
+  document.getElementById('difficulty-buttons').style.display = 'none';
+
+  // START 버튼과 타이머 보이기
+  document.querySelector('.header').style.display = 'flex'; // header 영역을 flex로 보이기
+  document.getElementById('timer').style.display = 'block'; // 타이머 보이기
+
+  // 게임 보드 보이기
   gameBoard.style.display = 'grid';
-  startButton.parentElement.style.display = 'flex'; // START 버튼과 타이머 표시
+
   createBoard(); // 게임 보드 생성
 }
+
 
 // 게임 시작 시 동작
 function startGame() {
