@@ -13,10 +13,10 @@
       <button class="difficulty-button" onclick="setDifficulty('hard')">Hard</button>
       <button class="difficulty-button" onclick="setDifficulty('crazy')">Crazy</button>
     </div>
-    <div class="header">
+    <div class="header" style="display: none;"> <!-- 처음엔 보이지 않도록 설정 -->
       <button id="start-button" onclick="startGame()">START</button>
     </div>
-    <div id="timer">⏰ 0</div> <!-- 타이머를 header 아래 줄에 위치 -->
+    <div id="timer" style="display: none;">⏰ 0</div> <!-- 타이머를 header 아래 줄에 위치 -->
   </div>
   <div class="game-board" id="game-board" style="display: none;"></div>
   <div id="pause-replay-buttons" style="display: none;">
